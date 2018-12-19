@@ -39,8 +39,8 @@ public class MainActivity4 extends AppCompatActivity {
 
     public void imgonClick(View v) {
         {
-            Toast.makeText(this, "GPS", Toast.LENGTH_SHORT).show();
-
+            Intent i = new Intent(this, MapsActivity.class);
+            startActivity(i);
 
         }
     }
