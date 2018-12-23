@@ -5,19 +5,29 @@ package com.example.andrribeiro.change_activity;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.Button;
+        import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Button btnActivity2;
+        Button idbtnFavorite1;
+        Button idbtnFavorite2;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        btnActivity2 = (Button) findViewById(R.id.idbtnActivity);
+        idbtnFavorite1 = (Button) findViewById(R.id.idbtnFavorite1);
+        idbtnFavorite2 = (Button) findViewById(R.id.idbtnFavorite2);
+
     }
 
-    public void btnClickAct2(View v) {
-        Intent i = new Intent(this, MainActivity4.class);
-        startActivity(i);
+
+
+    public void btnClickFa1(View view) {
+        Toast.makeText(this, "Marker in Casa", Toast.LENGTH_SHORT).show();
+    }
+
+    public void btnClickFa2(View view) {
+        Toast.makeText(this, "Marker in Trabalho", Toast.LENGTH_SHORT).show();
     }
 }

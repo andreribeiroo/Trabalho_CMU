@@ -8,7 +8,9 @@
 
     <string name="Menu_Secundario">Meus Locais Favoritos</string>
 
-    <string name="Voltar">Voltar</string>
+    <string name="Casa">Casa</string>
+    <string name="Trabalho">Trabalho</string>
+
     <string name="List">ListView</string>
     <string name="title_activity_login">Sign in</string>
     <!-- Strings related to login -->

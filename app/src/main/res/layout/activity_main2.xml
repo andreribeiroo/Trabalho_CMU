@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,9 +15,22 @@
          />
 
     <Button
-        android:id="@+id/idbtnActivity"
-        android:layout_width="wrap_content"
+        android:id="@+id/idbtnFavorite1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="btnClickAct2"
-        android:text="@string/Voltar" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:onClick="btnClickFa1"
+        android:text="@string/Casa" />
+
+    <Button
+        android:id="@+id/idbtnFavorite2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idbtnFavorite1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="7dp"
+        android:onClick="btnClickFa2"
+        android:text="@string/Trabalho" />
 </RelativeLayout>
