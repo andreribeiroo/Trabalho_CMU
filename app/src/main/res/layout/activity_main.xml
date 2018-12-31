@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/routing">
 
     <Button
         android:id="@+id/button"
@@ -35,10 +36,22 @@
 
          />
 
+    <ImageButton
+        android:id="@+id/img2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/GPS"
+        android:layout_above="@id/button2"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@android:drawable/ic_menu_mapmode"
+
+        />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Menu_Principal"
         android:layout_centerHorizontal="true"/>
+
 </RelativeLayout>
