@@ -22,9 +22,10 @@
         android:onClick="btnClickAct1"
         android:text="@string/Favoritos"
        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        />
 
-    <ImageButton
+    <Button
         android:id="@+id/img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -32,19 +33,14 @@
         android:onClick="imgonClick"
         android:layout_below="@id/button"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@android:drawable/ic_menu_mapmode"
+        android:background="@drawable/outline_place_black_18dp" />
 
-         />
-
-    <ImageButton
+    <Button
         android:id="@+id/img2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/GPS"
-        android:layout_above="@id/button2"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@android:drawable/ic_menu_mapmode"
-
+        android:background="@drawable/outline_my_location_black_18dp"
         />
 
     <TextView

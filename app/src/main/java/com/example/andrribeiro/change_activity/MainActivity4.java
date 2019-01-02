@@ -15,7 +15,8 @@ import android.widget.Toast;
 
 public class MainActivity4 extends AppCompatActivity {
     Button btnActivity4;
-    Button btnmap;
+    Button btnmap1;
+    Button btnmap2;
     String uri="geo:0,0?q=india";
 
     @Override
@@ -24,12 +25,12 @@ public class MainActivity4 extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnActivity4 = (Button) findViewById(R.id.user_sign_in_button);
-        ImageView img = (ImageButton) findViewById(R.id.img);
-        ImageView btnmap = (ImageButton) findViewById(R.id.img2);
+        btnActivity4 =  findViewById(R.id.user_sign_in_button);
+         btnmap1 = findViewById(R.id.img);
+         btnmap2 =  findViewById(R.id.img2);
 
 
-    btnmap.setOnClickListener(new View.OnClickListener() {
+    btnmap2.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 
