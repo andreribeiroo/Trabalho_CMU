@@ -60,7 +60,7 @@ public class MainActivity4 extends AppCompatActivity {
 
     public void imgonClick(View v) {
 
-        NotificationCompat.Builder mBuilder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)
                 .setContentTitle("GPS Status")
                 .setContentText("A Obter dados dos satélite....");

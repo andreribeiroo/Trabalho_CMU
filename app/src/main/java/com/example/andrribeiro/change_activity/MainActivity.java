@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,15 +16,34 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
-        btnActivity1 = (Button) findViewById(R.id.button);
+        btnActivity1 = findViewById(R.id.button);
 
     }
 
     public void btnClickAct4(View v) {
-        Intent i = new Intent(this, MainActivity4.class);
-        startActivity(i);
-    }
 
+
+        final EditText nMatricula = findViewById(R.id.matricula);
+        final EditText nUtilizador = findViewById(R.id.utilizador);
+        final EditText nPassword = findViewById(R.id.password);
+
+
+
+        String user = nUtilizador.getText().toString();
+        String matricula = nMatricula.getText().toString();
+        String pass = nPassword.getText().toString();
+
+
+       if( (user.equals("")||(matricula.equals(""))||(pass.equals(""))) ){
+           Toast.makeText(this, "Todos os campos devem estar preenchidos",Toast.LENGTH_SHORT).show();
+
+        }else{
+
+           Intent i = new Intent(this, MainActivity4.class);
+
+           startActivity(i);
+        }
+    }
 
     public void btnClickAct1(View view) {
     }
