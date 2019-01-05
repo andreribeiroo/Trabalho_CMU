@@ -1,6 +1,10 @@
 package com.example.andrribeiro.change_activity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,11 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Button btnActivity1;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
 
-        btnActivity1 = findViewById(R.id.button);
 
     }
 

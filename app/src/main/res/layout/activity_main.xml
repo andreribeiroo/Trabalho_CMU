@@ -39,12 +39,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/outline_my_location_black_18dp"
         />
-
-    <TextView
-        android:id="@+id/textView"
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Menu_Principal"
-        android:layout_centerHorizontal="true"/>
+        android:id="@+id/btnphncall"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="@id/img"
+        android:background="@drawable/baseline_call_black_24"/>
+
 
 </RelativeLayout>
