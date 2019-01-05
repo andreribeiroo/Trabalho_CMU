@@ -1,5 +1,6 @@
 package com.example.andrribeiro.change_activity;
 
+        import android.arch.persistence.room.Room;
         import android.content.Intent;
         import android.support.design.widget.FloatingActionButton;
         import android.support.v7.app.AlertDialog;
@@ -12,6 +13,8 @@ package com.example.andrribeiro.change_activity;
         import android.widget.ListView;
         import android.widget.Toast;
 
+        import com.example.andrribeiro.change_activity.data.AppDatabase;
+
 public class MainActivity2 extends AppCompatActivity {
 private ListView List;
     FloatingActionButton fab;
@@ -23,7 +26,9 @@ private ListView List;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-       List = findViewById(R.id.ListMeusLocais);
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(), AppDatabase.class, "database-name.db").build();
+
+        List = findViewById(R.id.ListMeusLocais);
 
         fab = findViewById(R.id.newlocal);
         fab.setOnClickListener(new View.OnClickListener() {
